@@ -7,7 +7,7 @@ Email Me 👉 ✉️ **dgedd236@students.bju.edu** For Collaboration/Project or 
 - 🌱 **I’m currently learning:** Object Oriented Programming in Java
 - 💡 **I’m currently looking for internships in:** Greenville, South Carolina, 29614
 - 💬 **Connect with me on Linkedln:** www.linkedin.com/in/david-geddam
-- ⚡ **Fun fact:** Passionate about Future of AI and Deep Learning
+- ⚡ **Fun fact:** Passionate about Future of AI, and hobbies is Working Out
 
 
 ## 🌐 Socials:

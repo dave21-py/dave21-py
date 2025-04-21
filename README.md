@@ -1,5 +1,5 @@
 # Hi 👋, I'm David Geddam
-A passionate AI Engineer || Passionate about Software Development || Studying at Bob Jones University
+A passionate AI Engineer || Enthusiastic about Software Development || Studying at Bob Jones University
 
 Email Me 👉 ✉️ **dgedd236@students.bju.edu** For Collaboration/Project or Anything Else. 😊
 

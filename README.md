@@ -9,6 +9,13 @@ Email Me 👉 ✉️ **dgedd236@students.bju.edu** For Collaboration/Project or 
 - 💬 **Connect with me on Linkedln:** www.linkedin.com/in/david-geddam
 - ⚡ **Fun fact:** Passionate about Future of AI, and hobbies is Working Out
 
+[![](https://github.com/izam-mohammed/izam-mohammed/blob/feature/chat.svg)](https://www.linkedin.com/in/izammohammed/) 
+
+
+
+[![](https://github.com/izam-mohammed/izam-mohammed/blob/feature/github-contribution-grid-snake.svg)](https://www.linkedin.com/in/izammohammed/)
+
+
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/david-geddam/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:dgedd236@students.bju.edu) 

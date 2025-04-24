@@ -30,8 +30,6 @@ Email Me 👉 ✉️ **dgedd236@students.bju.edu** For Collaboration/Project or 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=dave21-py&theme=react&hide_border=false&include_all_commits=true&count_private=false)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=dave21-py&theme=react&hide_border=false)<br/>
-### Currently Most Used Languages: Java, CSS, HTML, and Beginner Python <br/>
-
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=dave21-py&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 

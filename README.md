@@ -3,7 +3,7 @@ A passionate AI Engineer || Enthusiastic about Software Development || Studying 
 
 Email Me 👉 ✉️ **dgedd236@students.bju.edu** For Collaboration/Project or Anything Else. 😊
 
-- 🔭 **I’m currently working on:** CUATROS(JavaFX GUI Application)
+- 🔭 **Currently working on:** CUATROS(JavaFX GUI Application)
 - 🌱 **I’m currently learning:** Object Oriented Programming in Java
 - 💡 **I’m currently looking for internships in:** Greenville, South Carolina, 29614
 - 💬 **Connect with me on Linkedln:** www.linkedin.com/in/david-geddam

@@ -1,5 +1,7 @@
 ### Hi there 👋
-[![](https://github.com/dave21-py/dave21-py/blob/main/chat.svg)](https://www.linkedin.com/in/david-geddam/)
+
+![David's Profile Card](chat.svg)
+
 
 A passionate Gen AI Engineer || Enthusiastic about Software Development || Studying at Bob Jones University
 

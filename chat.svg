@@ -295,8 +295,8 @@
   <!-- From Columbus... -->
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="420" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> Studying Computer Engineering at BJU </text>
-    <text x="15" y="50"> Loves GenAI Tools and Vibe Coding </text>
+    <text x="15" y="27"> Computer Engineering Student at BJU </text>
+    <text x="15" y="50"> Passionate about GenAI & Creative Coding </text>
   </g>
 
   <!-- typing 3 -->
@@ -320,7 +320,7 @@
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
     <rect width="380" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> Actively Learning about AI..... </text>    
+    <text x="15" y="27"> Continuously exploring the field of AI </text>    
   </g>
 
 
@@ -345,7 +345,7 @@
   <!-- Thanks -->
   <g transform="translate(10, 240)" class="msg-5">
     <rect width="440" height="42.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> AI Enthusiast and Innovater </text>    
+    <text x="15" y="27"> AI Enthusiast and Innovator </text>    
   </g> 
 
 
@@ -354,6 +354,6 @@
   <!-- Have a great... -->
   <g transform="translate(10, 336)" class="msg-6">
     <rect width="550" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> please reach out via <a xlink:href="https://www.linkedin.com/in/david-geddam/">https://www.linkedin.com/in/david-geddam/</a> or email</text>
+    <text x="15" y="27"> Connect with me on LinkedIn <a xlink:href="https://www.linkedin.com/in/david-geddam/">https://www.linkedin.com/in/david-geddam/</a> or email</text>
   </g>
 </svg>

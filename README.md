@@ -1,4 +1,6 @@
-# Hi 👋, I'm David Geddam
+### Hi there 👋
+[![](https://github.com/dave21-py/dave21-py/blob/main/chat.svg)](https://www.linkedin.com/in/david-geddam/)
+
 A passionate Gen AI Engineer || Enthusiastic about Software Development || Studying at Bob Jones University
 
 Email Me 👉 ✉️ **davidspurgeongeddam@gmail.com** For Collaboration/Project or Anything Else. 😊

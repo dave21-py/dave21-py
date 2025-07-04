@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-
+![David's Profile Card](chat.svg)
 
 A passionate Gen AI Engineer || Enthusiastic about Software Development || Studying at Bob Jones University
 

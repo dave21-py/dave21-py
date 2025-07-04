@@ -354,6 +354,6 @@
   <!-- Have a great... -->
   <g transform="translate(10, 336)" class="msg-6">
     <rect width="550" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> Connect with me on LinkedIn <a xlink:href="https://www.linkedin.com/in/david-geddam/">https://www.linkedin.com/in/david-geddam/</a> or email</text>
+    <text x="15" y="27"> Connect with me on LinkedIn <a xlink:href="https://www.linkedin.com/in/david-geddam/">LinkedIn</a></text>
   </g>
 </svg>

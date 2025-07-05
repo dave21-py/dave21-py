@@ -348,9 +348,8 @@
     <text x="15" y="27"> AI Enthusiast and Innovater </text>    
   </g> 
 
-  <a xlink:href="https://www.linkedin.com/in/david-geddam/" target="_blank">
-    <g transform="translate(10, 336)" class="msg-6">
-      <rect width="550" height="42" rx="18.0355" class="bubble" />
-      <text x="15" y="27">Connect with me on LinkedIn</text>
-    </g>
-  </a>
+  <g transform="translate(10, 336)" class="msg-6">
+    <rect width="550" height="42" rx="18.0355" class="bubble" />
+    <text x="15" y="27"> Connect with me on linkedin <a xlink:href="https://www.linkedin.com/in/david-geddam/">https://www.linkedin.com/in/david-geddam/</a> or email</text>
+  </g>
+</svg>

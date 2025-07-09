@@ -1,5 +1,4 @@
-### Hi there 👋
-
+<p align="left"><img width=30%" src="https://github.com/alansmathew/alansmathew/raw/master/lang.gif" alt="lang image here" /></p>
 ![David's Profile Card](chat.svg)
 
 A passionate Gen AI Engineer || Enthusiastic about Software Development || Studying at Bob Jones University

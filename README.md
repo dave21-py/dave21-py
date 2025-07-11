@@ -4,14 +4,6 @@
 
 A passionate Gen AI Engineer || Enthusiastic about Software Development || Studying at Bob Jones University
 
-Email Me 👉 ✉️ **davidspurgeongeddam@gmail.com** For Collaboration/Project or Anything Else. 😊
-
-- 🔭 **Currently working on:** EDA dashboards
-- 🌱 **I’m currently learning:** Machine Learning
-- 💡 **I’m currently looking for internships in:** USA
-- 💬 **Connect with me on Linkedln:** www.linkedin.com/in/david-geddam
-- ⚡ **Fun fact:** Passionate about Future of AI, and hobbies is Vibe Coding and Working Out
-
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](www.linkedin.com/in/david-geddam) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:dgedd236@students.bju.edu) 
 

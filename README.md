@@ -1,4 +1,6 @@
-<p align="left"><img width=30%" src="https://github.com/alansmathew/alansmathew/raw/master/lang.gif" alt="lang image here" /></p>
+_<p align="left"><img width=30%" src="https://github.com/alansmathew/alansmathew/raw/master/lang.gif" alt="lang image here" /></p>
+_
+Hi There!
 
 ![David's Profile Card](chat.svg)
 

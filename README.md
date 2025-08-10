@@ -1,4 +1,5 @@
-_<p align="left"><img width=30%" src="https://github.com/alansmathew/alansmathew/raw/master/lang.gif" alt="lang image here" /></p>_
+[comment]: # (<p align="left"><img width=30%" src="https://github.com/alansmathew/alansmathew/raw/master/lang.gif" alt="lang image here" /></p>)
+
 
 ![David's Profile Card](chat.svg)
 

@@ -7,8 +7,6 @@ Hey There! 👋🏻
 
 ![David's Profile Card](chat.svg)
 
-A passionate Gen AI Engineer || Enthusiastic about Software Development || Studying at Bob Jones University
-
 <div align="center">
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
 </div>

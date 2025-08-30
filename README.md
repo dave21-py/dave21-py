@@ -7,9 +7,9 @@ Hey There! 👋🏻
 
 ![David's Profile Card](chat.svg)
 
-<div align="center">
-  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
-</div>
+# <div align="center">
+#  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+# </div>
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=dave21-py&theme=react&hide_border=false&include_all_commits=true&count_private=false)<br/>

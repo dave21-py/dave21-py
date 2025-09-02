@@ -16,7 +16,3 @@ Hey There! 👋🏻
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=dave21-py&show_icons=true&theme=dark&locale=en" alt="dave21-py" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=dave21-py&theme=dark" alt="dave21-py" /></p>
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=dave21-py&theme=react&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=dave21-py&theme=react&hide_border=false)<br/>

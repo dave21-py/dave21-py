@@ -3,7 +3,7 @@ Hey There! 👋🏻
 
 ![David's Profile Card](chat.svg)
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=niconielsen32&label=Profile%20views&color=0e75b6&style=flat-square" alt="dave21-py" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=dave21py&label=Profile%20views&color=0e75b6&style=flat-square" alt="dave21-py" /> </p>
 
 # <div align="center">
 #  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />

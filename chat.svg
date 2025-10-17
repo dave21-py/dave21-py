@@ -53,19 +53,19 @@
   </g>
 
   <!-- I'm David -->
-  <g class="msg-1">
+  <g class="msg-2">
     <rect x="10" y="0" width="115" height="42" rx="20" class="bubble" />
     <text x="25" y="27">CS student</text>
   </g>
 
   <!-- Comp Sci student... -->
-  <g class="msg-2">
+  <g class="msg-3">
     <rect x="10" y="52" width="370" height="66" rx="20" class="bubble" />
     <text x="25" y="102">AI enthusiast</text>
   </g>
 
   <!-- Continuously exploring... -->
-  <g class="msg-3">
+  <g class="msg-4">
     <rect x="10" y="128" width="365" height="42" rx="20" class="bubble" />
     <text x="25" y="155">Continuously exploring the field of GenAI</text>    
   </g>

@@ -1,42 +1,45 @@
 <svg width="450" height="170" viewBox="0 0 450 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .bubble { fill: #21262d; }
+    /* Default light mode styles */
+    .bubble { fill: #f6f8fa; }
     text {
-      fill: #c9d1d9;
+      fill: #24292f;
       font-size: 16px;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 400;
     }
-    
     .typing-dot {
-      fill: #c9d1d9;
+      fill: #57606a;
       animation: typing-fade 1.2s infinite;
     }
+
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      .bubble { fill: #21262d; }
+      text { fill: #c9d1d9; }
+      .typing-dot { fill: #c9d1d9; }
+    }
+
+    /* Common Animation Logic */
     .typing-dot:nth-child(2) { animation-delay: 0.2s; }
     .typing-dot:nth-child(3) { animation-delay: 0.4s; }
-
     @keyframes typing-fade {
       0%, 100% { opacity: 0.3; }
       50% { opacity: 1; }
     }
-    
     .typing, .msg { opacity: 0; animation-fill-mode: forwards; }
-    
     @keyframes fadeIn { to { opacity: 1; } }
     @keyframes fadeOut { to { opacity: 0; } }
 
     /* Animation Sequence */
     .typing-1 { animation: fadeIn 0.3s 0.2s, fadeOut 0.3s 1.7s; }
     .msg-1 { animation: fadeIn 0.3s 1.8s; }
-    
     .typing-2 { animation: fadeIn 0.3s 2.3s, fadeOut 0.3s 3.8s; }
     .msg-2 { animation: fadeIn 0.3s 3.9s; }
-    
     .typing-3 { animation: fadeIn 0.3s 4.4s, fadeOut 0.3s 5.9s; }
     .msg-3 { animation: fadeIn 0.3s 6s; }
   </style>
 
-  <!-- Typing Indicator Bubble -->
   <g class="typing typing-1">
     <rect x="0" y="0" width="60" height="40" rx="20" class="bubble" />
     <circle cx="18" cy="20" r="4" class="typing-dot" />
@@ -56,7 +59,7 @@
   </g>
   <g class="msg msg-2">
     <rect x="0" y="50" width="165" height="60" rx="20" class="bubble" />
-    <text x="15" y="72">CS student</text>
+    <text x="15" y="72">comp sci</text>
     <text x="15" y="92">AI enthusiast</text>
   </g>
 

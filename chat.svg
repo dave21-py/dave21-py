@@ -43,7 +43,7 @@
   </style>
 
   <g class="typing typing-1"> <rect x="0" y="0" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="20" r="4" class="typing-dot"/> <circle cx="30" cy="20" r="4" class="typing-dot"/> <circle cx="42" cy="20" r="4" class="typing-dot"/> </g>
-  <g class="msg msg-1"> <rect x="0" y="0" width="105" height="40" rx="20" class="bubble"/> <text x="15" y="25">hey, I'm David</text> </g>
+  <g class="msg msg-1"> <rect x="0" y="0" width="140" height="40" rx="20" class="bubble"/> <text x="15" y="25">hey, I'm David</text> </g>
 
   <g class="typing typing-2"> <rect x="0" y="50" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="70" r="4" class="typing-dot"/> <circle cx="30" cy="70" r="4" class="typing-dot"/> <circle cx="42" cy="70" r="4" class="typing-dot"/> </g>
   <g class="msg msg-2"> <rect x="0" y="50" width="165" height="60" rx="20" class="bubble"/> <text x="15" y="72">comp sci student</text> <text x="15" y="92">AI enthusiast</text> </g>

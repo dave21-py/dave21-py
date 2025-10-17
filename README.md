@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/dave21-py/dave21-py/main/chat.svg" alt="David's Profile Card" width="450"/>
+  <!-- Cache-busting link for the chat bubbles -->
+  <img src="https://raw.githubusercontent.com/dave21-py/dave21-py/main/chat.svg?v=1" alt="David's Profile Card" width="450"/>
   
   <div>
     <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="38" height="38"/></a>

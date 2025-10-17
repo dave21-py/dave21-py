@@ -52,10 +52,15 @@
     <text x="25" y="27">I'm David</text>
   </g>
 
+  <!-- I'm David -->
+  <g class="msg-1">
+    <rect x="10" y="0" width="115" height="42" rx="20" class="bubble" />
+    <text x="25" y="27">CS student</text>
+  </g>
+
   <!-- Comp Sci student... -->
   <g class="msg-2">
     <rect x="10" y="52" width="370" height="66" rx="20" class="bubble" />
-    <text x="25" y="79">cs student</text>
     <text x="25" y="102">AI enthusiast</text>
   </g>
 

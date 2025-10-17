@@ -1,73 +1,41 @@
-<svg width="550" height="300" viewBox="0 0 550 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="450" height="170" viewBox="0 0 450 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .bubble {
-      fill: rgba(255, 255, 255, 0.1);
-      stroke: rgba(255, 255, 255, 0.2);
-      stroke-width: 1px;
+      fill: #21262d; /* Solid color matching GitHub UI */
     }
     text {
-      fill: #EAEAEA;
-      font-size: 18px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-      font-weight: 500;
-      letter-spacing: -0.02em;
+      fill: #c9d1d9; /* Standard GitHub text color */
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
     }
     
-    .msg-1, .msg-2, .msg-3, .msg-4 {
+    /* Subtle fade-in animation */
+    .msg-1, .msg-2, .msg-3 {
         opacity: 0;
-        animation-fill-mode: forwards;
+        animation: fadeIn 0.5s ease-in-out forwards;
     }
-
-    .msg-1 {
-      animation: fadeIn 0.5s 0.5s forwards;
-    }
-
-    .msg-2 {
-      animation: fadeIn 0.5s 1.5s forwards;
-    }
-
-    .msg-3 {
-      animation: fadeIn 0.5s 2.5s forwards;
-    }
-
-    .msg-4 {
-      animation: fadeIn 0.5s 3.5s forwards;
-    }
+    .msg-2 { animation-delay: 0.3s; }
+    .msg-3 { animation-delay: 0.6s; }
     
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      to { opacity: 1; }
     }
   </style>
   
-  <!-- I'm David -->
   <g class="msg-1">
-    <rect x="10" y="0" width="115" height="42" rx="20" class="bubble" />
-    <text x="25" y="27">I'm David</text>
+    <rect x="0" y="0" width="105" height="40" rx="20" class="bubble" />
+    <text x="15" y="25" alignment-baseline="middle">I'm David</text>
   </g>
 
-  <!-- I'm David -->
   <g class="msg-2">
-    <rect x="10" y="0" width="115" height="42" rx="20" class="bubble" />
-    <text x="25" y="27">CS student</text>
+    <rect x="0" y="50" width="165" height="60" rx="20" class="bubble" />
+    <text x="15" y="72" alignment-baseline="middle">cs student</text>
+    <text x="15" y="92" alignment-baseline="middle">AI enthusiast</text>
   </g>
 
-  <!-- Comp Sci student... -->
   <g class="msg-3">
-    <rect x="10" y="52" width="370" height="66" rx="20" class="bubble" />
-    <text x="25" y="102">AI enthusiast</text>
+    <rect x="0" y="120" width="345" height="40" rx="20" class="bubble" />
+    <text x="15" y="145" alignment-baseline="middle">Continuously exploring the field of GenAI</text>    
   </g>
-
-  <!-- Continuously exploring... -->
-  <g class="msg-4">
-    <rect x="10" y="128" width="365" height="42" rx="20" class="bubble" />
-    <text x="25" y="155">Continuously exploring the field of GenAI</text>    
-  </g>
-
 </svg>

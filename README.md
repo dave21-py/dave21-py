@@ -2,7 +2,6 @@
   <!-- WORKING CHAT BUBBLES -->
   <img src="https://raw.githubusercontent.com/dave21-py/dave21-py/main/chat.svg" alt="David's Profile Card" width="450"/>
   
-  <br>
   
   <!-- LANGUAGES AND TOOLS -->
   <div>

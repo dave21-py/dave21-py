@@ -1,68 +1,73 @@
-<svg width="550" height="300" viewBox="0 0 550 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="450" height="170" viewBox="0 0 450 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .bubble {
-      fill: rgba(255, 255, 255, 0.1);
-      stroke: rgba(255, 255, 255, 0.2);
-      stroke-width: 1px;
-    }
+    .bubble { fill: #21262d; }
     text {
-      fill: #EAEAEA;
-      font-size: 18px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-      font-weight: 500;
-      letter-spacing: -0.02em;
+      fill: #c9d1d9;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
     }
     
-    .msg-1, .msg-2, .msg-3, .msg-4 {
-        opacity: 0;
-        animation-fill-mode: forwards;
+    .typing-dot {
+      fill: #c9d1d9;
+      animation: typing-fade 1.2s infinite;
     }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
 
-    .msg-1 {
-      animation: fadeIn 0.5s 0.5s forwards;
-    }
-
-    .msg-2 {
-      animation: fadeIn 0.5s 1.5s forwards;
-    }
-
-    .msg-3 {
-      animation: fadeIn 0.5s 2.5s forwards;
-    }
-
-    .msg-4 {
-      animation: fadeIn 0.5s 3.5s forwards;
+    @keyframes typing-fade {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
     }
     
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+    .typing, .msg { opacity: 0; animation-fill-mode: forwards; }
+    
+    @keyframes fadeIn { to { opacity: 1; } }
+    @keyframes fadeOut { to { opacity: 0; } }
+
+    /* Animation Sequence */
+    .typing-1 { animation: fadeIn 0.3s 0.2s, fadeOut 0.3s 1.7s; }
+    .msg-1 { animation: fadeIn 0.3s 1.8s; }
+    
+    .typing-2 { animation: fadeIn 0.3s 2.3s, fadeOut 0.3s 3.8s; }
+    .msg-2 { animation: fadeIn 0.3s 3.9s; }
+    
+    .typing-3 { animation: fadeIn 0.3s 4.4s, fadeOut 0.3s 5.9s; }
+    .msg-3 { animation: fadeIn 0.3s 6s; }
   </style>
-  
-  <!-- I'm David -->
-  <g class="msg-1">
-    <rect x="10" y="0" width="115" height="42" rx="20" class="bubble" />
-    <text x="25" y="27">I'm David</text>
+
+  <!-- Typing Indicator Bubble -->
+  <g class="typing typing-1">
+    <rect x="0" y="0" width="60" height="40" rx="20" class="bubble" />
+    <circle cx="18" cy="20" r="4" class="typing-dot" />
+    <circle cx="30" cy="20" r="4" class="typing-dot" />
+    <circle cx="42" cy="20" r="4" class="typing-dot" />
+  </g>
+  <g class="msg msg-1">
+    <rect x="0" y="0" width="105" height="40" rx="20" class="bubble" />
+    <text x="15" y="25">I'm David</text>
   </g>
 
-  <!-- Comp Sci student... -->
-  <g class="msg-2">
-    <rect x="10" y="52" width="370" height="66" rx="20" class="bubble" />
-    <text x="25" y="79">comp sci</text>
-    <text x="25" y="102">AI enthusiast</text>
+  <g class="typing typing-2">
+    <rect x="0" y="50" width="60" height="40" rx="20" class="bubble" />
+    <circle cx="18" cy="70" r="4" class="typing-dot" />
+    <circle cx="30" cy="70" r="4" class="typing-dot" />
+    <circle cx="42" cy="70" r="4" class="typing-dot" />
+  </g>
+  <g class="msg msg-2">
+    <rect x="0" y="50" width="165" height="60" rx="20" class="bubble" />
+    <text x="15" y="72">CS student</text>
+    <text x="15" y="92">AI enthusiast</text>
   </g>
 
-  <!-- Continuously exploring... -->
-  <g class="msg-3">
-    <rect x="10" y="128" width="365" height="42" rx="20" class="bubble" />
-    <text x="25" y="155">Continuously exploring the field of GenAI</text>    
+  <g class="typing typing-3">
+    <rect x="0" y="120" width="60" height="40" rx="20" class="bubble" />
+    <circle cx="18" cy="140" r="4" class="typing-dot" />
+    <circle cx="30" cy="140" r="4" class="typing-dot" />
+    <circle cx="42" cy="140" r="4" class="typing-dot" />
   </g>
-
+  <g class="msg msg-3">
+    <rect x="0" y="120" width="345" height="40" rx="20" class="bubble" />
+    <text x="15" y="145">Continuously exploring the field of GenAI</text>    
+  </g>
 </svg>

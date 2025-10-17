@@ -1,14 +1,14 @@
 <svg width="450" height="170" viewBox="0 0 450 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* --- THEME-AWARE COLORS --- */
-    /* Light mode default */
-    .bubble { fill: #f6f8fa; }
+    /* --- THEME-AWARE COLORS (FIXED) --- */
+    /* Light mode uses a light grey bubble */
+    .bubble { fill: #f0f0f0; }
     text { fill: #24292f; }
     .typing-dot { fill: #57606a; }
     
-    /* Dark mode styles */
+    /* Dark mode uses the stats card color */
     @media (prefers-color-scheme: dark) {
-      .bubble { fill: #21262d; }
+      .bubble { fill: #0D1117; } /* Solid dark color */
       text { fill: #c9d1d9; }
       .typing-dot { fill: #c9d1d9; }
     }
@@ -20,80 +20,34 @@
       font-weight: 400;
     }
     .msg, .typing {
-      opacity: 0; /* All elements start hidden */
-      animation-fill-mode: forwards; /* This is key to hold the final state */
+      opacity: 0;
+      animation-fill-mode: forwards;
     }
 
-    /* --- ANIMATION DEFINITIONS (THE FIX) --- */
-
-    /* Animation for the "..." typing indicator dots */
-    @keyframes typing-fade {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 1; }
-    }
+    /* --- ANIMATION DEFINITIONS --- */
+    @keyframes typing-fade { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
     .typing-dot { animation: typing-fade 1.2s infinite; }
     .typing-dot:nth-child(2) { animation-delay: 0.2s; }
     .typing-dot:nth-child(3) { animation-delay: 0.4s; }
     
-    /* Animation for the typing bubble: appear for a short time, then disappear */
-    @keyframes typing-lifecycle {
-      0% { opacity: 1; }
-      99% { opacity: 1; }
-      100% { opacity: 0; }
-    }
-    
-    /* Animation for the message bubble: appear and STAY visible */
-    @keyframes reveal-and-stay {
-      0% { opacity: 0; transform: translateY(10px); }
-      1% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
+    @keyframes typing-lifecycle { 0% { opacity: 1; } 99% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes reveal-and-stay { 0% { opacity: 0; transform: translateY(10px); } 1% { opacity: 1; transform: translateY(0); } 100% { opacity: 1; transform: translateY(0); } }
 
     /* --- ANIMATION SEQUENCE --- */
     .typing-1 { animation: typing-lifecycle 1.5s 0.2s forwards; }
     .msg-1    { animation: reveal-and-stay 99s 1.7s forwards; }
-    
     .typing-2 { animation: typing-lifecycle 1.5s 2.2s forwards; }
     .msg-2    { animation: reveal-and-stay 99s 3.7s forwards; }
-    
     .typing-3 { animation: typing-lifecycle 1.5s 4.2s forwards; }
     .msg-3    { animation: reveal-and-stay 99s 5.7s forwards; }
   </style>
 
-  <!-- Message 1: Typing then Reveal -->
-  <g class="typing typing-1">
-    <rect x="0" y="0" width="60" height="40" rx="20" class="bubble" />
-    <circle cx="18" cy="20" r="4" class="typing-dot" />
-    <circle cx="30" cy="20" r="4" class="typing-dot" />
-    <circle cx="42" cy="20" r="4" class="typing-dot" />
-  </g>
-  <g class="msg msg-1">
-    <rect x="0" y="0" width="105" height="40" rx="20" class="bubble" />
-    <text x="15" y="25">I'm David</text>
-  </g>
+  <g class="typing typing-1"> <rect x="0" y="0" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="20" r="4" class="typing-dot"/> <circle cx="30" cy="20" r="4" class="typing-dot"/> <circle cx="42" cy="20" r="4" class="typing-dot"/> </g>
+  <g class="msg msg-1"> <rect x="0" y="0" width="105" height="40" rx="20" class="bubble"/> <text x="15" y="25">I'm David</text> </g>
 
-  <!-- Message 2: Typing then Reveal -->
-  <g class="typing typing-2">
-    <rect x="0" y="50" width="60" height="40" rx="20" class="bubble" />
-    <circle cx="18" cy="70" r="4" class="typing-dot" />
-    <circle cx="30" cy="70" r="4" class="typing-dot" />
-    <circle cx="42" cy="70" r="4" class="typing-dot" />
-  </g>
-  <g class="msg msg-2">
-    <rect x="0" y="50" width="165" height="60" rx="20" class="bubble" />
-    <text x="15" y="72">Comp sci</text>
-    <text x="15" y="92">AI enthusiast</text>
-  </g>
+  <g class="typing typing-2"> <rect x="0" y="50" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="70" r="4" class="typing-dot"/> <circle cx="30" cy="70" r="4" class="typing-dot"/> <circle cx="42" cy="70" r="4" class="typing-dot"/> </g>
+  <g class="msg msg-2"> <rect x="0" y="50" width="165" height="60" rx="20" class="bubble"/> <text x="15" y="72">comp sci</text> <text x="15" y="92">AI enthusiast</text> </g>
 
-  <!-- Message 3: Typing then Reveal -->
-  <g class="typing typing-3">
-    <rect x="0" y="120" width="60" height="40" rx="20" class="bubble" />
-    <circle cx="18" cy="140" r="4" class="typing-dot" />
-    <circle cx="30" cy="140" r="4" class="typing-dot" />
-    <circle cx="42" cy="140" r="4" class="typing-dot" />
-  </g>
-  <g class="msg msg-3">
-    <rect x="0" y="120" width="345" height="40" rx="20" class="bubble" />
-    <text x="15" y="145">Continuously exploring the field of GenAI</text>    
-  </g>
+  <g class="typing typing-3"> <rect x="0" y="120" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="140" r="4" class="typing-dot"/> <circle cx="30" cy="140" r="4" class="typing-dot"/> <circle cx="42" cy="140" r="4" class="typing-dot"/> </g>
+  <g class="msg msg-3"> <rect x="0" y="120" width="345" height="40" rx="20" class="bubble"/> <text x="15" y="145">Continuously exploring the field of GenAI</text> </g>
 </svg>

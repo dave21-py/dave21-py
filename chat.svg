@@ -1,45 +1,66 @@
 <svg width="450" height="170" viewBox="0 0 450 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* Default light mode styles */
+    /* --- THEME-AWARE COLORS --- */
+    /* Light mode default */
     .bubble { fill: #f6f8fa; }
-    text {
-      fill: #24292f;
-      font-size: 16px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 400;
-    }
-    .typing-dot {
-      fill: #57606a;
-      animation: typing-fade 1.2s infinite;
-    }
-
+    text { fill: #24292f; }
+    .typing-dot { fill: #57606a; }
+    
     /* Dark mode styles */
     @media (prefers-color-scheme: dark) {
       .bubble { fill: #21262d; }
       text { fill: #c9d1d9; }
       .typing-dot { fill: #c9d1d9; }
     }
+    
+    /* --- COMMON STYLES --- */
+    text {
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+    }
+    .msg, .typing {
+      opacity: 0; /* All elements start hidden */
+      animation-fill-mode: forwards; /* This is key to hold the final state */
+    }
 
-    /* Common Animation Logic */
-    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
-    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    /* --- ANIMATION DEFINITIONS (THE FIX) --- */
+
+    /* Animation for the "..." typing indicator dots */
     @keyframes typing-fade {
       0%, 100% { opacity: 0.3; }
       50% { opacity: 1; }
     }
-    .typing, .msg { opacity: 0; animation-fill-mode: forwards; }
-    @keyframes fadeIn { to { opacity: 1; } }
-    @keyframes fadeOut { to { opacity: 0; } }
+    .typing-dot { animation: typing-fade 1.2s infinite; }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    
+    /* Animation for the typing bubble: appear for a short time, then disappear */
+    @keyframes typing-lifecycle {
+      0% { opacity: 1; }
+      99% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    
+    /* Animation for the message bubble: appear and STAY visible */
+    @keyframes reveal-and-stay {
+      0% { opacity: 0; transform: translateY(10px); }
+      1% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
 
-    /* Animation Sequence */
-    .typing-1 { animation: fadeIn 0.3s 0.2s, fadeOut 0.3s 1.7s; }
-    .msg-1 { animation: fadeIn 0.3s 1.8s; }
-    .typing-2 { animation: fadeIn 0.3s 2.3s, fadeOut 0.3s 3.8s; }
-    .msg-2 { animation: fadeIn 0.3s 3.9s; }
-    .typing-3 { animation: fadeIn 0.3s 4.4s, fadeOut 0.3s 5.9s; }
-    .msg-3 { animation: fadeIn 0.3s 6s; }
+    /* --- ANIMATION SEQUENCE --- */
+    .typing-1 { animation: typing-lifecycle 1.5s 0.2s forwards; }
+    .msg-1    { animation: reveal-and-stay 99s 1.7s forwards; }
+    
+    .typing-2 { animation: typing-lifecycle 1.5s 2.2s forwards; }
+    .msg-2    { animation: reveal-and-stay 99s 3.7s forwards; }
+    
+    .typing-3 { animation: typing-lifecycle 1.5s 4.2s forwards; }
+    .msg-3    { animation: reveal-and-stay 99s 5.7s forwards; }
   </style>
 
+  <!-- Message 1: Typing then Reveal -->
   <g class="typing typing-1">
     <rect x="0" y="0" width="60" height="40" rx="20" class="bubble" />
     <circle cx="18" cy="20" r="4" class="typing-dot" />
@@ -51,6 +72,7 @@
     <text x="15" y="25">I'm David</text>
   </g>
 
+  <!-- Message 2: Typing then Reveal -->
   <g class="typing typing-2">
     <rect x="0" y="50" width="60" height="40" rx="20" class="bubble" />
     <circle cx="18" cy="70" r="4" class="typing-dot" />
@@ -59,10 +81,11 @@
   </g>
   <g class="msg msg-2">
     <rect x="0" y="50" width="165" height="60" rx="20" class="bubble" />
-    <text x="15" y="72">comp sci</text>
+    <text x="15" y="72">Comp sci</text>
     <text x="15" y="92">AI enthusiast</text>
   </g>
 
+  <!-- Message 3: Typing then Reveal -->
   <g class="typing typing-3">
     <rect x="0" y="120" width="60" height="40" rx="20" class="bubble" />
     <circle cx="18" cy="140" r="4" class="typing-dot" />

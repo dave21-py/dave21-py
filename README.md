@@ -16,9 +16,6 @@
   <br>
 
   <div>
-    <img src="https://github-readme-stats.vercel.app/api?username=dave21-py&show_icons=true&hide_border=true&bg_color=0D1117&title_color=c9d1d9&text_color=8b949e&icon_color=4FBC8A&rank_icon=github" alt="David Geddam's GitHub stats" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=dave21-py&show_icons=true&locale=en&layout=compact&hide_border=true&bg_color=0D1117&title_color=c9d1d9&text_color=8b949e" alt="Top languages" />
-    <br>
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=dave21-py&background=0D1117&hide_border=true&stroke=8b949e&ring=4FBC8A&fire=FFBF00&currStreakNum=c9d1d9&sideNums=8b949e&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub streak" />
   </div>
 </div>

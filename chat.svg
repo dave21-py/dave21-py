@@ -1,23 +1,20 @@
-<svg width="450" height="170" viewBox="0 0 450 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="450" height="210" viewBox="0 0 450 210" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* --- THEME-AWARE COLORS (FIXED) --- */
-    /* Light mode uses a light grey bubble */
+    /* --- THEME-AWARE COLORS --- */
     .bubble { fill: #f0f0f0; }
     text { fill: #24292f; }
     .typing-dot { fill: #57606a; }
 
-    /* Dark mode uses the stats card color */
     @media (prefers-color-scheme: dark) {
-      .bubble { fill: #0D1117; } /* Solid dark color */
+      .bubble { fill: #21262d; } 
       text { fill: #c9d1d9; }
       .typing-dot { fill: #c9d1d9; }
     }
     
     /* --- COMMON STYLES --- */
     text {
-      font-size: 16px;
+      font-size: 15px;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 400;
     }
     .msg, .typing {
       opacity: 0;
@@ -30,24 +27,64 @@
     .typing-dot:nth-child(2) { animation-delay: 0.2s; }
     .typing-dot:nth-child(3) { animation-delay: 0.4s; }
     
-    @keyframes typing-lifecycle { 0% { opacity: 1; } 99% { opacity: 1; } 100% { opacity: 0; } }
-    @keyframes reveal-and-stay { 0% { opacity: 0; transform: translateY(10px); } 1% { opacity: 1; transform: translateY(0); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes typing-lifecycle { 
+      0% { opacity: 0; } 
+      10% { opacity: 1; } 
+      90% { opacity: 1; } 
+      100% { opacity: 0; } 
+    }
+    
+    @keyframes reveal-pop { 
+      0% { opacity: 0; transform: translateY(5px) scale(0.98); } 
+      100% { opacity: 1; transform: translateY(0) scale(1); } 
+    }
 
     /* --- ANIMATION SEQUENCE --- */
-    .typing-1 { animation: typing-lifecycle 1.5s 0.2s forwards; }
-    .msg-1    { animation: reveal-and-stay 99s 1.7s forwards; }
-    .typing-2 { animation: typing-lifecycle 1.5s 2.2s forwards; }
-    .msg-2    { animation: reveal-and-stay 99s 3.7s forwards; }
-    .typing-3 { animation: typing-lifecycle 1.5s 4.2s forwards; }
-    .msg-3    { animation: reveal-and-stay 99s 5.7s forwards; }
+    .typing-1 { animation: typing-lifecycle 1.5s 0s forwards; }
+    .msg-1    { animation: reveal-pop 0.3s 1.5s forwards; }
+    
+    .typing-2 { animation: typing-lifecycle 1.5s 2.0s forwards; }
+    .msg-2    { animation: reveal-pop 0.3s 3.5s forwards; }
+    
+    .typing-3 { animation: typing-lifecycle 1.5s 4.0s forwards; }
+    .msg-3    { animation: reveal-pop 0.3s 5.5s forwards; }
   </style>
 
-  <g class="typing typing-1"> <rect x="0" y="0" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="20" r="4" class="typing-dot"/> <circle cx="30" cy="20" r="4" class="typing-dot"/> <circle cx="42" cy="20" r="4" class="typing-dot"/> </g>
-  <g class="msg msg-1"> <rect x="0" y="0" width="135" height="40" rx="20" class="bubble"/> <text x="15" y="25">hey, i'm david</text> </g>
+  <!-- Message 1 -->
+  <g class="typing typing-1"> 
+    <rect x="0" y="0" width="60" height="35" rx="17.5" class="bubble"/> 
+    <circle cx="18" cy="17.5" r="3" class="typing-dot"/> 
+    <circle cx="30" cy="17.5" r="3" class="typing-dot"/> 
+    <circle cx="42" cy="17.5" r="3" class="typing-dot"/> 
+  </g>
+  <g class="msg msg-1"> 
+    <rect x="0" y="0" width="130" height="35" rx="17.5" class="bubble"/> 
+    <text x="15" y="22">hey, i'm david</text> 
+  </g>
 
-  <g class="typing typing-2"> <rect x="0" y="50" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="70" r="4" class="typing-dot"/> <circle cx="30" cy="70" r="4" class="typing-dot"/> <circle cx="42" cy="70" r="4" class="typing-dot"/> </g>
-  <g class="msg msg-2"> <rect x="0" y="50" width="155" height="60" rx="20" class="bubble"/> <text x="15" y="72">comp sci major</text> <text x="15" y="92">ml and ai safety</text> </g>
+  <!-- Message 2 -->
+  <g class="typing typing-2"> 
+    <rect x="0" y="45" width="60" height="35" rx="17.5" class="bubble"/> 
+    <circle cx="18" cy="62.5" r="3" class="typing-dot"/> 
+    <circle cx="30" cy="62.5" r="3" class="typing-dot"/> 
+    <circle cx="42" cy="62.5" r="3" class="typing-dot"/> 
+  </g>
+  <g class="msg msg-2"> 
+    <rect x="0" y="45" width="160" height="55" rx="20" class="bubble"/> 
+    <text x="15" y="67" style="font-weight: 600;">comp sci major</text> 
+    <text x="15" y="87" style="font-size: 14px; opacity: 0.8;">ml and ai safety</text> 
+  </g>
 
-  <g class="typing typing-3"> <rect x="0" y="120" width="60" height="40" rx="20" class="bubble"/> <circle cx="18" cy="140" r="4" class="typing-dot"/> <circle cx="30" cy="140" r="4" class="typing-dot"/> <circle cx="42" cy="140" r="4" class="typing-dot"/> </g>
-  <g class="msg msg-3"> <rect x="0" y="120" width="345" height="40" rx="20" class="bubble"/> <text x="15" y="145">interested in ai safety research, reach out if you want to work with me👋🏻</text> </g>
+  <!-- Message 3 -->
+  <g class="typing typing-3"> 
+    <rect x="0" y="110" width="60" height="35" rx="17.5" class="bubble"/> 
+    <circle cx="18" cy="127.5" r="3" class="typing-dot"/> 
+    <circle cx="30" cy="127.5" r="3" class="typing-dot"/> 
+    <circle cx="42" cy="127.5" r="3" class="typing-dot"/> 
+  </g>
+  <g class="msg msg-3"> 
+    <rect x="0" y="110" width="360" height="65" rx="20" class="bubble"/> 
+    <text x="15" y="135">interested in ai safety research, reach out</text> 
+    <text x="15" y="158">if you want to work with me 👋🏻</text> 
+  </g>
 </svg>

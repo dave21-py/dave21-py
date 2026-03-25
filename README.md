@@ -1,6 +1,9 @@
 <div align="center">
     <h3> Welcome! </h3>
     <hr/>
+    
+</div>
+
 
 ```
 about_me = {
@@ -9,5 +12,3 @@ about_me = {
   "Interests" : "traveling, learning, biking, and taking playing video games"
 }
 ```
-
-</div>

@@ -5,7 +5,7 @@
 </div>
 
 
-```
+```python
 about_me = {
   "Occupation" : "Student focusing on ML Research",
   "Coding Languages" : "Python, LaTeX, HTML, CSS"

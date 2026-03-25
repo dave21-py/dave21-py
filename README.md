@@ -9,6 +9,6 @@
 about_me = {
   "Occupation" : "Student focusing on ML Research",
   "Coding Languages" : "Python, LaTeX, HTML, CSS"
-  "Interests" : "traveling, learning, biking, and taking playing video games"
+  "Interests" : "traveling, learning, biking, and playing video games"
 }
 ```

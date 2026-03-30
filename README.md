@@ -7,8 +7,8 @@
 
 ```python
 about_me = {
-  "Occupation" : "Student focusing on ML Research",
-  "Coding Languages" : "Python, LaTeX, HTML, CSS"
+  "Occupation" : "Student focusing on Research",
+  "Coding Languages" : "Python, LaTeX"
   "Interests" : "traveling, learning, biking, and playing video games"
 }
 ```

@@ -7,7 +7,8 @@
 
 ```python
 about_me = {
-  "Occupation" : "Student Interested in AGI Safety and AI Risk",
+  "Occupation" : "Software Developer",
+  "Research Interests" : "AI Risk, AGI Safety"
   "Coding Languages" : "Python, LaTeX"
   "Interests" : "traveling, learning, video games"
 }

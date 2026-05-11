@@ -8,8 +8,8 @@
 ```python
 about_me = {
   "Occupation" : "Software Developer",
-  "Research Interests" : "AI Risk, AGI Safety"
+  "Research Interests" : "AI Risk, AGI Safety, Consciousness"
   "Coding Languages" : "Python, LaTeX"
-  "Interests" : "traveling, learning, video games"
+  "Interests" : "traveling, learning, gym"
 }
 ```
